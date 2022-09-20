@@ -1,0 +1,35 @@
+.section__projects {
+    .container {
+        background-color: $primaryColor;
+        height: 250px;
+        max-width:  unset;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .projects {    
+        &__list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-item {
+            }
+        }
+        &__left-side {
+            img {
+
+            }
+        }
+
+        &__right-side {
+            &-number {
+
+            }
+
+            &-text {
+
+            }
+        }
+    }
+}

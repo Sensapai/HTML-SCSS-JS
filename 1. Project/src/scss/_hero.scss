@@ -1,0 +1,46 @@
+.section__hero {
+    .container {
+        display: flex;
+        align-items: baseline;
+        justify-content: end;
+        gap: 143.1px;
+        padding-bottom: 146px;
+    }
+    .hero {
+        &__left-side {
+            align-self: flex-start;
+            &-img {
+                margin-top: 20px;
+                width: 328.4px;
+                height: 225.4px;
+            }
+        }
+        &__right-side {
+            display: flex;
+            flex-direction: column;
+            width: 540px;
+        }
+        &__title {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+        }
+        &__subtitle {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $secondary;
+            margin: 50px 0;
+        }
+    }
+    .btn {
+        &__primary {
+            height: 65px;
+            width: 225px;
+        }
+    }
+}
+
