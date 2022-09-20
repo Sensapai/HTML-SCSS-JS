@@ -1,0 +1,18 @@
+.section__sponsors {
+    .container {
+        display: flex;
+        height: 292px;
+        justify-content: center;
+        align-items: center;
+    }
+    .sponsors {
+        &__list {
+            display: flex;
+            gap: 30px;
+            flex-direction: row;
+        }
+        &__list-item {
+        }
+    }
+}
+

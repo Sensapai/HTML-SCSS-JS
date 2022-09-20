@@ -13,7 +13,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 52px;
             &-item {
+                display: flex;
             }
         }
         &__left-side {
@@ -23,12 +25,23 @@
         }
 
         &__right-side {
+            margin-left: 20px;
             &-number {
-
+                font-family: 'Roboto';
+                color: #ffffff;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 21px;
+                line-height: 25px;
             }
 
             &-text {
-
+                font-family: 'Roboto';
+                color: #ffffff;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
             }
         }
     }

@@ -1,0 +1,55 @@
+.section__work {
+    background-color: $primaryBGC;
+    .container {
+        height: 1004px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+    }
+    .subtitle {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        width: 540px;
+        margin: 50px 0 57px 0;
+        color: $secondary;
+    }
+
+    .image-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .play-container {
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            .play-btn {
+                width: 45px;
+                height: 45px;
+            }
+        }
+        .img {
+            width: 1110px;
+            height: 600px;
+        }
+    }
+}
