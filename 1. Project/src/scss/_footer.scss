@@ -1,4 +1,44 @@
 // Footer
 footer {
     display: block;
-}
+    max-width:  unset;
+    width: 100%;
+    background-color: $primaryColor;
+    .container {
+        display: flex;
+        height: 151px;
+        justify-content: space-between;
+        align-items: center;
+        .texts {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            .name {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 21px;
+                line-height: 25px;
+                color: $secondaryBGC;
+            }
+            .rights {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 21px;
+                color: $secondaryBGC;
+            }
+        }
+        .social-links {
+            display: flex;
+            gap: 21px;
+
+            &-item {
+                cursor: pointer;
+            }
+        }
+    }
+}   
+
+
