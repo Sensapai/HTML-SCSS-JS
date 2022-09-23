@@ -7,6 +7,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: $breakpoint1200) {
+            height: 200px;
+        }
     }
     .projects {    
         &__list {
@@ -14,6 +18,7 @@
             justify-content: center;
             align-items: center;
             gap: 52px;
+            flex-wrap: wrap;
             &-item {
                 display: flex;
             }

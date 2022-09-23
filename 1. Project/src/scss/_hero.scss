@@ -5,6 +5,22 @@
         justify-content: end;
         gap: 143.1px;
         padding-bottom: 146px;
+
+        @media (max-width: $breakpoint992) {
+            gap: 90px;
+        }
+        @media (max-width: $breakpoint860) {
+            gap: 70px;
+        }
+        @media (max-width: $breakpoint768) {
+            gap: 57px;
+        }
+        @media (max-width: $breakpoint600) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
     }
     .hero {
         &__left-side {
@@ -12,19 +28,40 @@
             &-img {
                 margin-top: 20px;
                 width: 328.4px;
-                height: 225.4px;
+                height: 100%;
+
+                @media (max-width: $breakpoint768) {
+                    width: 290px;
+                    height: 100%;
+                    margin-top: 0;
+                }
             }
         }
         &__right-side {
             display: flex;
             flex-direction: column;
             width: 540px;
+            @media (max-width: $breakpoint992) {
+                width: 475px;
+            }
         }
         &__title {
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 500;
             font-size: 48px;
+
+            @media (max-width: $breakpoint860) {
+                font-size: 37px;
+            }
+
+            @media (max-width: $breakpoint768) {
+                font-size: 35px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 33px;
+            }
         }
         &__subtitle {
             font-family: 'Roboto';
@@ -34,12 +71,39 @@
             line-height: 26px;
             color: $secondary;
             margin: 50px 0;
+
+            @media (max-width: $breakpoint992) {
+                margin: 35px 0;
+            }
+
+            @media (max-width: $breakpoint860) {
+                font-size: 14px;
+            }
+
+            @media (max-width: $breakpoint768) {
+                margin: 20px 0;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 13px;
+            }
         }
     }
     .btn {
         &__primary {
             height: 65px;
             width: 225px;
+
+            @media (max-width: $breakpoint992) {
+                height: 55px;
+                width: 205px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                width: 100%;
+                height: 45px;
+                font-size: 15px;
+            }
         }
     }
 }

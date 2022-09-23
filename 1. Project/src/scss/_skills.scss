@@ -5,6 +5,10 @@
         align-items: center;
         justify-content: center;
         gap: 150px;
+
+        @media (max-width: $breakpoint1200) {
+            gap: 65px;
+        }
     }
     .skills {
         &__left-side {

@@ -16,6 +16,11 @@ nav {
     justify-content: space-between;
     padding-top: 72px;
     padding-bottom: 162px;
+
+    @media (max-width: $breakpoint600) {
+        padding-bottom: 110px;
+        padding-top: 60px;
+    }
 }
 
 .menu {
