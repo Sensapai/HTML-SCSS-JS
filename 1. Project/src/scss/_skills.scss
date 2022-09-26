@@ -7,7 +7,19 @@
         gap: 150px;
 
         @media (max-width: $breakpoint1200) {
+            height: 500px;
+        }
+
+        @media (max-width: $breakpoint992) {
             gap: 65px;
+        }
+
+        @media (max-width: $breakpoint860) {
+            flex-wrap: wrap;
+            row-gap: 10px;
+            height: 100%;
+            padding: 30px 5px;
+            max-width: 540px;
         }
     }
     .skills {
@@ -15,18 +27,52 @@
             display: flex;
             flex-direction: column;
             gap: 50px;
+
+            @media (max-width: $breakpoint1200) {
+                gap: 40px;
+            }
+
+            @media (max-width: $breakpoint992) {
+                gap: 30px;
+            }
+            @media (max-width: $breakpoint860) {
+                width: 100%;                
+            }
             &-title {
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 32px;
                 line-height: 38px;
+
+                @media (max-width: $breakpoint860) {
+                    text-align: center;               
+                }
+
+                @media (max-width: $breakpoint768) {
+                    font-size: 30px;
+                }
+
+                @media (max-width: $breakpoint480) {
+                    font-size: 27px;
+                }
             }
         }
         &__right-side {
             .img {
-                width: 555px;
-                height:450px;
+                max-width: 555px;
+                max-height: 450px;
+
+                @media (max-width: $breakpoint1200) {
+                    max-width: 405px;
+                    height: 100%;
+                    max-height: unset;
+                }
+
+                @media (max-width: $breakpoint860) {
+                    max-width: 100%;
+                    
+                }
             }
         }
     }
@@ -35,10 +81,20 @@
         width: 445px;
         height:4px;
         margin-bottom: 30px;
+
+        @media (max-width: $breakpoint1200) {
+            max-width: 350px;
+        }
+
+        @media (max-width: $breakpoint860) {
+            width: 100%;
+            max-width: unset;
+        }
+
         .skill {
             background: $primaryColor;
             height: 4px;
-            width: 350px;
+            width: 75%;
         }
     }
     .skill__name {
@@ -49,6 +105,17 @@
         line-height: 26px;
         color: $secondary;
         margin-bottom: 20px;
+
+        @media (max-width: $breakpoint992) {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: $breakpoint860) {
+            font-size: 14px;
+            text-align: center;
+        }
+        @media (max-width: $breakpoint480) {
+            font-size: 13px;
+        }
     }
-    
 }

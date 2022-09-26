@@ -3,12 +3,15 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        height: 366px;
+        //height: 366px;
+        height: 100%;
         background-color: $secondaryBGC;
         gap: 50px;
+        padding-bottom: 100px;
 
         @media (max-width: $breakpoint992) {
-            height: 300px;
+            //height: 300px;
+            padding-bottom: 70px;
         }
 
         @media (max-width: $breakpoint860) {
@@ -17,7 +20,8 @@
 
         @media (max-width: $breakpoint768) {
             gap: 25px;
-            height: 250px;
+            //height: 250px;
+            padding-bottom: 50px;
         }
     }
     .about {
@@ -53,7 +57,7 @@
             line-height: 26px;
             text-align: center;
             color: $secondary;
-            width: 540px;
+            max-width: 540px;
 
             @media (max-width: $breakpoint860) {
                 font-size: 14px;

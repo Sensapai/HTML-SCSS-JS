@@ -1,11 +1,25 @@
 .section__work {
     background-color: $primaryBGC;
     .container {
-        height: 1004px;
+        //height: 1004px;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content:center;
+        //justify-content:center;
         align-items: center;
+        padding-bottom: 100px;
+        gap: 50px;
+        @media (max-width: $breakpoint992) {
+            padding-bottom: 70px;
+        }
+        @media (max-width: $breakpoint860) {
+            gap: 35px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            gap: 25px;
+            padding-bottom: 50px;
+        }
     }
     .title {
         font-family: 'Roboto';
@@ -14,6 +28,21 @@
         font-size: 32px;
         line-height: 38px;
         text-align: center;
+        margin-top: 119px;
+
+        @media (max-width: $breakpoint992) {
+            margin-top: 80px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            margin-top: 60px;
+            font-size: 30px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            margin-top: 40px;
+            font-size: 27px;
+        }
     }
     .subtitle {
         font-family: 'Roboto';
@@ -22,9 +51,20 @@
         font-size: 16px;
         line-height: 26px;
         text-align: center;
-        width: 540px;
-        margin: 50px 0 57px 0;
+        max-width: 540px;
+        //margin: 50px 0 57px 0;
         color: $secondary;
+        @media (max-width: $breakpoint860) {
+            font-size: 14px;
+        }
+
+        @media (max-width: $breakpoint600) {
+            width: 100%;
+        }
+
+        @media (max-width: $breakpoint480) {
+            font-size: 13px;
+        }
     }
 
     .image-container {
@@ -36,20 +76,22 @@
             background-color: white;
             border-radius: 100%;
             position: absolute;
-            width: 100px;
-            height: 100px;
+            //width: 100px;
+            //height: 100px;
+            width: 9.05%;
+            height: 16.743%;
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
             .play-btn {
-                width: 45px;
-                height: 45px;
+                width: 45%;
+                height: 45%;
             }
         }
         .img {
-            width: 1110px;
-            height: 600px;
+            max-width: 100%;
+            max-height: 600px;
         }
     }
 }

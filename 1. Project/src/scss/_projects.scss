@@ -11,6 +11,15 @@
         @media (max-width: $breakpoint1200) {
             height: 200px;
         }
+
+        @media (max-width: $breakpoint600) {
+            height: 100%;
+            padding: 40px 0px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            padding: 25px 0px;
+        }
     }
     .projects {    
         &__list {
@@ -21,6 +30,10 @@
             flex-wrap: wrap;
             &-item {
                 display: flex;
+            }
+
+            @media (max-width: $breakpoint375) {
+                gap: 35px;
             }
         }
         &__left-side {
@@ -38,6 +51,14 @@
                 font-weight: 500;
                 font-size: 21px;
                 line-height: 25px;
+
+                @media (max-width: $breakpoint860) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: $breakpoint480) {
+                    font-size: 16px;
+                }
             }
 
             &-text {
@@ -47,6 +68,14 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 26px;
+
+                @media (max-width: $breakpoint860) {
+                    font-size: 14px;
+                }
+
+                @media (max-width: $breakpoint480) {
+                    font-size: 13px;
+                }
             }
         }
     }
