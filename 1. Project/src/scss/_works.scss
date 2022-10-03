@@ -3,7 +3,8 @@
         padding: 0;
         max-width: unset;
         width: 100%;
-        height: 960px;
+        //height: 960px;
+        height: 100%;
 
         display: flex;
         flex-wrap: wrap;
@@ -16,11 +17,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width: $breakpoint768) {
+            width: 33.3333%;
+        }
+        @media (max-width: $breakpoint600) {
+            width: 50%;
+        }
         .img {
             width: 100%;
             display: block;
             font-size:0;
-            height: 480px;
+            height: 100%;
         } 
 
         &:hover{

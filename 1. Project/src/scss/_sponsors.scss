@@ -1,17 +1,42 @@
 .section__sponsors {
     .container {
         display: flex;
-        height: 292px;
+        min-height: 292px;
         justify-content: center;
         align-items: center;
+        max-width: unset;
+
+        @media (max-width: $breakpoint600) {
+            min-height: 230px;
+        }
     }
     .sponsors {
         &__list {
             display: flex;
             gap: 30px;
             flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            @media (max-width: $breakpoint1200) {
+                column-gap: 30px;
+                row-gap: 15px;
+            }
         }
         &__list-item {
+
+            @media (max-width: $breakpoint600) {
+                column-gap: 30px;
+                row-gap: 15px;
+                height: 96px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                height: 71px;
+            }
+            @media (max-width: $breakpoint375) {
+                height: 58px;
+            }
         }
     }
 }

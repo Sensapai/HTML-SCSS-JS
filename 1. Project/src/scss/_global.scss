@@ -30,6 +30,10 @@ body {
     }
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 .btn {
     background: $primaryColor;
     font-style: normal;
