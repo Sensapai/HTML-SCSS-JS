@@ -4,21 +4,41 @@
         max-width: unset;
         width: 100%;
         //height: 762px;
+        gap: 50px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        @media (max-width: $breakpoint860) {
+            gap: 35px;
+        }
+        @media (max-width: $breakpoint768) {
+            gap: 25px;
+        }
+
         .title {
-            margin-top: 100px;
+            margin-top: 119px;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 500;
             font-size: 32px;
             line-height: 38px;
             text-align: center;
+            @media (max-width: $breakpoint992) {
+                margin-top: 80px;
+            }
+    
+            @media (max-width: $breakpoint768) {
+                margin-top: 60px;
+                font-size: 30px;
+            }
+    
+            @media (max-width: $breakpoint480) {
+                margin-top: 40px;
+                font-size: 27px;
+            }
         }
         .subtitle {
-            margin-top: 40px;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
@@ -27,17 +47,30 @@
             text-align: center;
             color: $secondary;
             width: 540px;
+            @media (max-width: $breakpoint860) {
+                font-size: 14px;
+            }
+    
+            @media (max-width: $breakpoint600) {
+                width: 100%;
+            }
+    
+            @media (max-width: $breakpoint480) {
+                font-size: 13px;
+            }
         }
         .inputs {
-            margin-top: 55px;
-
             .top-side {
                 display: flex;
                 gap: 30px;
                 margin-bottom: 20px;
+                @media (max-width: $breakpoint480) {
+                    gap: 20px;
+                }
             }
             .form-input {
                 padding: 17px 20px;
+                width: 50%;
 
                 &:focus {
                     outline: none;
@@ -51,7 +84,6 @@
         }
 
         .btn {
-            margin-top: 50px;
             margin-bottom: 100px;
             font-family: 'Roboto';
             font-style: normal;
@@ -62,6 +94,18 @@
             letter-spacing: 0.15em;
             height: 55px;
             width: 190px;
+            @media (max-width: $breakpoint992) {
+                margin-bottom: 80px;
+                height: 45px;
+                width: 205px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                margin-bottom: 60px;
+                width: 100%;
+                height: 45px;
+                font-size: 15px;
+            }
         }
     }    
 }

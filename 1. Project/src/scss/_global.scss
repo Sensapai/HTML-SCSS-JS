@@ -21,6 +21,10 @@
         max-width: none;
     }
 
+    @media (max-width: $breakpoint425) {
+        max-width: none;
+    }
+
 }
 
 // Body Locked

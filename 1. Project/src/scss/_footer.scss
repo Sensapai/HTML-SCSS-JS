@@ -9,10 +9,19 @@ footer {
         height: 151px;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: $breakpoint425) {
+            flex-direction: column-reverse;
+            gap: 20px;
+            justify-content: center;
+            align-items: unset;
+        }
         .texts {
             display: flex;
             gap: 20px;
             flex-direction: column;
+            @media (max-width: $breakpoint425) {
+                gap: 0;
+            }
             .name {
                 font-family: 'Roboto';
                 font-style: normal;
