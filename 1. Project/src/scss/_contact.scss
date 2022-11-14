@@ -60,6 +60,9 @@
             }
         }
         .inputs {
+            @media (max-width: $breakpoint480) {
+                width: 100%;
+            }
             .top-side {
                 display: flex;
                 gap: 30px;
@@ -71,6 +74,10 @@
             .form-input {
                 padding: 17px 20px;
                 width: 50%;
+
+                @media (max-width: $breakpoint480) {
+                    padding: 15px 10px;
+                }
 
                 &:focus {
                     outline: none;
