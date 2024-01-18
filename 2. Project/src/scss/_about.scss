@@ -1,0 +1,35 @@
+.about {
+    .cards-wrapper {
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .card {
+        border-radius: 5px;
+        border: 1px solid #DCEBF7;
+        background: #FFF;
+        width: 300px;
+        padding: 35px 13px 21px;
+    
+            // .card__title
+    
+            &__title {
+                color: $secondaryColor;
+                font-size: 20px;
+                line-height: 1.5;
+                letter-spacing: 7px;
+                text-transform: uppercase;
+                margin-bottom: 14px;
+            }
+    
+            // .card__text
+
+            &__img {
+                margin-bottom: 20px;
+                width: 94px;
+                height: 94px;
+                object-fit: contain;
+            }
+        
+    }
+}
