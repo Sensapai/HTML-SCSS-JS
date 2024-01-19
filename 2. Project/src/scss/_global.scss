@@ -8,12 +8,20 @@
 .common_section {
     text-align: center;
     padding: 77px 0 80px;
+
+    @media (max-width: 600px) {
+        padding: 57px 0 60px;
+    }
 }
 
 body {
     font-family: $fontMain;
     font-family: 'Open Sans', sans-serif;
     font-size: $fontSize + px;
+
+    @media (max-width: 400px) {
+        font-size: $mobileFontSize + px;
+    }
 }
 
 p {
@@ -47,6 +55,10 @@ p {
 
 .title-wrapper {
     margin-bottom: 60px;
+
+    @media (max-width: 600px) {
+        margin-bottom: 40px;
+    }
 }
 
 .title {

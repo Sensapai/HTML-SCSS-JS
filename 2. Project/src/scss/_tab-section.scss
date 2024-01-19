@@ -1,14 +1,20 @@
 .tab-section {
+    .tabs__nav-item + .tabs__nav-item {
+        margin-left: 15px;
+
+        @media (max-width: 660px) {
+            margin-left: auto;
+            margin-top: 10px;
+        }
+    }
     .tabs {
         
-		// .tabs__nav
-
-        &__nav-item + &__nav-item {
-            margin-left: 15px;
-        }
-
 		&__nav {
             margin-bottom: 40px;
+
+            @media (max-width: 660px) {
+                margin-bottom: 30px;
+            }
 
             &-item {
                 color: #FFF;
@@ -18,6 +24,17 @@
                 padding: 1px 30px;
                 border-radius: 4px;
                 background: #92A0AD;
+
+                @media (max-width: 660px) {
+                    display: block;
+                    width: 80%;
+                    margin: 0 auto;
+                    padding: 10px 30px;
+                }
+
+                @media (max-width: 400px) {
+                    font-size: 14px;
+                }
             }
 
             &-item.active {
@@ -38,6 +55,10 @@
                 font-size: 31px;
                 line-height: 1.16;
                 margin-bottom: 14px;
+
+                @media (max-width: 660px) {
+                    font-size: 24px;
+                }
             }
 
             &-desc {

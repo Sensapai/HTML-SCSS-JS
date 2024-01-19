@@ -14,18 +14,37 @@
     background-size: cover;
     background-position: center;
 
-    // .welcome__heading
     &__heading {
         color: $backgroundColor;
         font-size: 59px;
         line-height: 1.1;
         letter-spacing: 4px;
         text-transform: uppercase;
-        margin-bottom: 106px;
+        margin-bottom: 106px; 
+
+        @media (max-width: 400px) {
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
     }
 
     &__links > * + * {
         margin-left: 20px;
+
+        @media (max-width: 400px) {
+            margin-top: 20px;
+        }
+    }
+
+    &__links {
+        .link, .link-primary {
+            @media (max-width: 400px) {
+                display: block;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
     }
 }
 
