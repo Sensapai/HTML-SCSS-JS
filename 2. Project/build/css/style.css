@@ -108,6 +108,14 @@ legend {
   padding: 77px 0 80px;
 }
 
+.hide {
+  display: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-family: "Open Sans", sans-serif;
@@ -163,6 +171,26 @@ p {
   line-height: 1.17;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .header {
@@ -362,8 +390,14 @@ p {
   background-color: #2E80B6;
 }
 
+.tab-section .tabs__item {
+  -webkit-animation: fade 1s;
+          animation: fade 1s;
+}
+
 .tab-section .tabs__item-img {
   margin-bottom: 16px;
+  height: 627px;
 }
 
 .tab-section .tabs__item-title {

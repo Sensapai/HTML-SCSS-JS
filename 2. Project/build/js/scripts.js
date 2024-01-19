@@ -1,28 +1,26 @@
 // Custom Scripts
-// Мобильное меню бургер
-function burgerMenu() {
-    const burger = document.querySelector('.burger')
-    const menu = document.querySelector('.menu')
-    const body = document.querySelector('body')
-    burger.addEventListener('click', () => {
-        if (!menu.classList.contains('active')) {
-            menu.classList.add('active')
-            burger.classList.add('active')
-            body.classList.add('locked')
-        } else {
-            menu.classList.remove('active')
-            burger.classList.remove('active')
-            body.classList.remove('locked')
-        }
-    })
-    // Вот тут мы ставим брейкпоинт навбара
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 991.98) {
-            menu.classList.remove('active')
-            burger.classList.remove('active')
-            body.classList.remove('locked')
-        }
-    })
+const tabButtons = document.querySelectorAll(".tabs__nav-item");
+const tabItems = document.querySelectorAll(".tabs__item");
+
+function toggleTab(index) {
+    tabItems.forEach((item, i) => {
+        item.classList.toggle("hide", i !== index);
+    });
+
+    tabButtons.forEach((btn, i) => {
+        btn.classList.toggle("active", i === index);
+    });
 }
-burgerMenu()
+
+function initializeTabs() {
+    tabButtons.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+            toggleTab(index);
+        });
+    });
+}
+
+// Initialize tabs
+initializeTabs();
+toggleTab(0);
 

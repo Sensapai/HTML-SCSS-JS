@@ -45,9 +45,11 @@
 		// .tabs__item
 
 		&__item {
+            animation: fade 1s;
 
             &-img {
                 margin-bottom: 16px;
+                height: 627px;
             }
             
             &-title {
