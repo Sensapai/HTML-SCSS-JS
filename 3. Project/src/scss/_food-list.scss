@@ -1,0 +1,48 @@
+.food-list {
+    padding: 115px 0px 102px;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__text-wrapper {
+        padding: 28px 19px 35px;
+    }
+    // .food-list__card
+
+    &__card {
+        border-radius: 10px;
+        background-color: #312F30;
+        width: 260px;
+        height: 323px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    // .food-list__img
+
+    &__img {
+        width: 262px;
+        height: 175px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    // .food-list__title
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 13px;
+    }
+
+    // .food-list__desc
+
+    &__desc {
+        font-size: 16px;
+    }
+}
+

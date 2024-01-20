@@ -1,0 +1,35 @@
+.hero {
+    background-image: url("../img/welcome-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+
+    min-height: 100vh;
+
+    padding: 212px 0px 240px;
+    margin-top: -99px;
+
+    &__text-wrapper {
+        width: 524px;
+    }
+    
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1.4px;
+        margin-bottom: 7px;
+    }
+    
+    &__title {
+        font-size: 57.33px;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 37px;
+    }
+
+    &__text {
+        font-size: 18px;
+        margin-bottom: 42px;
+    }
+}

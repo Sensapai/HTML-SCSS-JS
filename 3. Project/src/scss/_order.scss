@@ -1,0 +1,49 @@
+.order {
+    background-color: #312F30;
+    padding: 61px 0;
+    // .order_price
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 90px;
+    }
+
+    .order-text-wrapper {
+        width: 370px;
+    }
+
+    &__price {
+        color: #F6762C;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+
+    // .order__img
+
+    &__img {
+        max-width: 470px;
+    }
+
+    // .order__title
+
+    &__title {
+        font-size: 44.2px;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+
+    // .order__text
+
+    &__text {
+        font-size: 16px;
+        margin-bottom: 13px;
+    }
+
+    .btn {
+        margin-top: 11px;
+    }
+    
+}
