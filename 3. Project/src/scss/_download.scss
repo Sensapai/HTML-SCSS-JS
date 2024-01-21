@@ -1,0 +1,22 @@
+.download {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 950px;
+    }
+
+    padding: 62px 0;
+    background-color: #312F30;
+
+    // .download__title
+
+    &__title {
+        font-size: 40px;
+        font-weight: 500;
+    }
+}
+
+.btn {
+}
