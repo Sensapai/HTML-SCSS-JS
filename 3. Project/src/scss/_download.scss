@@ -5,6 +5,15 @@
         justify-content: space-between;
         align-items: center;
         max-width: 950px;
+
+        @media (max-width: 1024px) {
+            justify-content: space-around;
+        }
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+            gap: 25px;
+        }
     }
 
     padding: 62px 0;
@@ -15,8 +24,9 @@
     &__title {
         font-size: 40px;
         font-weight: 500;
-    }
-}
 
-.btn {
+        @media (max-width: 670px) {
+            font-size: 30px;
+        }
+    }
 }

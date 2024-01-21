@@ -6,12 +6,33 @@
     background-position: center;
 
     min-height: 100vh;
-
     padding: 212px 0px 240px;
     margin-top: -99px;
 
+    > * {
+        position: relative;
+        z-index: 10;
+    }
+
+    @media (max-width: 500px) {
+        
+        &::before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
     &__text-wrapper {
         width: 524px;
+
+        @media (max-width: 670px) {
+            width: 100%;
+        }
     }
     
     &__subtitle {
@@ -26,10 +47,23 @@
         font-weight: 500;
         line-height: normal;
         margin-bottom: 37px;
+
+        @media (max-width: 670px) {
+            font-size: 40px;
+        }
     }
 
     &__text {
         font-size: 18px;
         margin-bottom: 42px;
+
+        @media (max-width: 1024px) {
+            opacity: 1;
+        }
+
+        @media (max-width: 670px) {
+            font-size: 16px;
+            line-height: 1.3;
+        }
     }
 }

@@ -16,6 +16,14 @@ body {
     color: #fff;
 }
 
+.locked {
+    //position: fixed;
+}
+
+.hide {
+    display: none !important;
+}
+
 .btn {
     display: flex;
     align-items: center;
