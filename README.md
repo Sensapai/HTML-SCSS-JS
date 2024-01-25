@@ -16,3 +16,4 @@ If you encounter red errors, follow these additional steps:
 Project Links:
 - [Templates #3](https://www.figma.com/file/YsfjeAFFHecZ8KV8AMDu7t0J/Templates-%233.-More-on-Figma.info?node-id=1%3A2)
 - [Velocity](https://www.figma.com/file/MTovtwrCmu8ftssnbTHvnY/Velocity?type=design&node-id=0%3A1&mode=dev)
+- [Burger](https://www.figma.com/file/FglH3WWa7oEqUnuoHaPFIP/maket-Burger-Landing?type=design&node-id=0%3A1&mode=dev)
